@@ -2,7 +2,7 @@
 <div>
   <p>Implementado con cámara Logitech C290, Raspberry pi 4, conexión remota con TeamViewer.</p>  
   <h1>Resumen del trabajo</h1>
-  Detección de automóviles y celdas de estacionamiento en un parqueadero, utlizando técnicas de visión artificial, mostrando su estado en una interfaz gráfica en tiempo real.
+  Detección de automóviles y celdas de estacionamiento en un parqueadero, utilizando técnicas de visión artificial, mostrando su estado en una interfaz gráfica en tiempo real.
   <h1>Descripción del trabajo</h1>
       <p>Implementado con tecnologías como Python, flask, HTML, CSS</p>
       <p>Librerías utilizadas: Scikit-learn, CV2, numpy, matplotlib, flask</p>
