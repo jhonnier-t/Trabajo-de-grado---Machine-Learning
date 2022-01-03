@@ -1,0 +1,40 @@
+.grid{
+    width: 100%;
+    height: auto;
+    font-size: large;
+    text-align: center;
+    grid-template-rows: 1fr 1fr;
+    }
+    
+.gridceldas {background: rgb(83, 83, 83);
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: 100% 100%;
+    column-gap: 1em;
+    row-gap: 20%;
+    padding: 2% 2% 17% !important;
+    }
+    
+.titulo{
+    background: rgb(165, 165, 165);
+    font-size: xx-large;
+    text-align: center;
+    padding-top: 5%;
+    }
+    
+.libre{
+background: rgb(96, 248, 96);
+}
+    
+.ocupada{
+background: rgb(247, 70, 70);
+}
+    
+.Hora{
+font-size: large;
+text-align: center;
+}
+
+.grid div:hover{
+    border: 1px solid #000000;
+    }
