@@ -122,26 +122,27 @@ for imagePath in imagePaths:
     imagenes.append(np.array(image).flatten())
     imagenesG.append(np.array(imageG).flatten())
     labels.append(imagePath.split(os.path.sep)[-2])
-    print('Cargando Datos')
-    le = LabelEncoder()
-    labels = le.fit_transform(labels)
-    Titulos = ['Carro', 'Celda']
-    Xtrain1, Xtest1, Ytrain1, Ytest1 =
-    train_test_split(caracteristicas1, labels, test_size=0.2)
-    Xtrain2, Xtest2, Ytrain2, Ytest2 =
-    train_test_split(caracteristicas2, labels, test_size=0.2)
-    Xtrain3, Xtest3, Ytrain3, Ytest3 =
-    train_test_split(caracteristicas3, labels, test_size=0.2)
-    XtrainI, XtestI, YtrainI, YtestI = train_test_split(imagenes,
-    labels, test_size=0.2)
-    XtrainG, XtestG, YtrainG, YtestG = train_test_split(imagenesG,
-    labels, test_size=0.2)
-    XtrainI, XtestI, YtrainI, YtestI = np.array(XtrainI),
-    np.array(XtestI), np.array(YtrainI), np.array(YtestI)
-    XtrainG, XtestG, YtrainG, YtestG = np.array(XtrainG),
-    np.array(XtestG), np.array(YtrainG), np.array(YtestG)
-    rutM = '/home/pi/Modelos/'
-    np.set_printoptions(precision=4)
+    
+print('Cargando Datos')
+le = LabelEncoder()
+labels = le.fit_transform(labels)
+Titulos = ['Carro', 'Celda']
+Xtrain1, Xtest1, Ytrain1, Ytest1 =
+train_test_split(caracteristicas1, labels, test_size=0.2)
+Xtrain2, Xtest2, Ytrain2, Ytest2 =
+train_test_split(caracteristicas2, labels, test_size=0.2)
+Xtrain3, Xtest3, Ytrain3, Ytest3 =
+train_test_split(caracteristicas3, labels, test_size=0.2)
+XtrainI, XtestI, YtrainI, YtestI = train_test_split(imagenes,
+labels, test_size=0.2)
+XtrainG, XtestG, YtrainG, YtestG = train_test_split(imagenesG,
+labels, test_size=0.2)
+XtrainI, XtestI, YtrainI, YtestI = np.array(XtrainI),
+np.array(XtestI), np.array(YtrainI), np.array(YtestI)
+XtrainG, XtestG, YtrainG, YtestG = np.array(XtrainG),
+np.array(XtestG), np.array(YtrainG), np.array(YtestG)
+rutM = '/home/pi/Modelos/'
+np.set_printoptions(precision=4)
 
 
 print('Entrenando primeros modelos')
